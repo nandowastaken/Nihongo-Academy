@@ -7,6 +7,11 @@ def operatorSign(num):
     else:
         return 0
 
-def translateHiragana(letter):
-    hiragana = {'あ': 'a', 'い': 'i', 'う': 'u', 'え': 'e', 'お': 'o'}
-    return hiragana[letter]
+def mastery_classification(points):
+    if points % 5 == 0:
+        return True
+    else:
+        return False
+
+def translateAlphabet(letter, alphabet):
+    return alphabet[letter]
