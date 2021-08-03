@@ -52,7 +52,7 @@ def main():
                     object_quiz_box_active = quiz_hiragana
                     boxes_scenes = draw_box_hiragana
                     clicks = clicks_hiragana
-                    activate_quiz(rika_hiragana, quiz_hiragana, give_results_hiragana, hiragana_quiz_letters, 'Hiragana', change_room, clicks_hiragana)
+                    manage_clicks(rika_hiragana, quiz_hiragana, give_results_hiragana, hiragana_quiz_letters, 'Hiragana', change_room, clicks_hiragana)
 
                 elif change_room == "Katakana":
                     change_room = isPressed(buttons_katakana, "Katakana")
@@ -60,7 +60,7 @@ def main():
                     object_quiz_box_active = quiz_katakana
                     boxes_scenes = draw_box_katakana
                     clicks = clicks_katakana
-                    activate_quiz(rika_katakana, quiz_katakana, give_results_katakana, katakana_quiz_letters, 'Katakana', change_room, clicks_katakana)
+                    manage_clicks(rika_katakana, quiz_katakana, give_results_katakana, katakana_quiz_letters, 'Katakana', change_room, clicks_katakana)
 
                 elif change_room == "Frases":
                     change_room = isPressed(buttons_frases, "Frases")
@@ -68,14 +68,14 @@ def main():
                     object_quiz_box_active = quiz_frases
                     boxes_scenes = draw_box_frases
                     clicks = clicks_frases
-                    activate_quiz(rika_frases, quiz_frases, give_results_frases, frases_quiz, 'Frases', change_room, clicks_frases)
+                    manage_clicks(rika_frases, quiz_frases, give_results_frases, frases_quiz, 'Frases', change_room, clicks_frases)
                 elif change_room == "Kanji":
                     change_room = isPressed(buttons_kanji, "Kanji")
                     object_used = rika_kanji
                     object_quiz_box_active = quiz_kanji
                     boxes_scenes = draw_box_kanji
                     clicks = clicks_kanji
-                    activate_quiz(rika_kanji, quiz_kanji, give_results_kanji, kanji_letters, 'Kanji', change_room, clicks_kanji)
+                    manage_clicks(rika_kanji, quiz_kanji, give_results_kanji, kanji_letters, 'Kanji', change_room, clicks_kanji)
 
                 # checks if the box is active or not
                 if object_quiz_box_active.input_rect.collidepoint(event.pos) and object_quiz_box_active.answered == False and object_used.clicks in boxes_scenes:
@@ -95,8 +95,13 @@ def main():
                 elif change_room == "Katakana":                  
                     manage_quiz(event, rika_katakana, quiz_katakana, translateAlphabet, katakana, clicks_katakana)
 
+                if event.key == pygame.K_LEFT:
+                    go_back(object_used, boxes_scenes, change_room)
+            
+        # chooses which scenary to draw
         if change_room == "menu":
             draw_menu(screen)
+            
         elif change_room == "Hiragana":
             hiragana_room(screen)
             draw_questions_quiz(quiz_hiragana, rika_hiragana, hiragana_quiz_letters, draw_box_hiragana)

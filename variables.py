@@ -1,5 +1,4 @@
 import pygame
-from pygame import mixer
 pygame.init()
 
 # screen icon
@@ -67,10 +66,15 @@ katakana_sounds = {
     10: 'audios/o.mp3'
 }
 
+frases_sounds = {}
+
+kanji_sounds = {}
+
 # letters
 hiragana_letters = {7: "あ", 8: "い", 9: "う", 10: "え", 11: "お"}
 katakana_letters = {6: "ア", 7: "イ", 8: "ウ", 9: "エ", 10: "オ"}
 frases = {}
+kanji_letters = {}
 
 # quiz results list
 give_results_hiragana = [18]
@@ -100,7 +104,7 @@ background_kanji = pygame.image.load('images/background_kanji.jpg')
 hiragana_quiz_letters = {13: "あ", 14: "い", 15: "う", 16: "え", 17: "お"}
 katakana_quiz_letters = {12: "ア", 13: "イ", 14: "ウ", 15: "エ", 16: "オ"}
 frases_quiz = {}
-kanji_letters = {}
+kanji_quiz_letters = {}
 
 # when draw box of the quizzes
 draw_box_hiragana = [13, 14, 15, 16, 17]

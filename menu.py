@@ -44,6 +44,10 @@ def isPressed(button_list, message):
         x_check = (mouse_x < button[0] + button[2] and mouse_x > button[0])
         y_check = (mouse_y < button[1] + button[3] and mouse_y > button[1])
         if x_check and y_check:
+            # plays sound at click a button
+            pygame.mixer.music.load('audios\click_sound.wav')
+            pygame.mixer.music.play()
+
             return button[4]
 
     return message

@@ -1,7 +1,6 @@
 import pygame
 import random
 from variables import *
-from rooms import rika_hiragana
 pygame.init()
 
 class Quiz:
