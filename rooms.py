@@ -8,6 +8,10 @@ rika_katakana = Rika()
 rika_frases = Rika()
 rika_kanji = Rika()
 
+def go_back(object, quiz_questions, room):
+    if object.clicks not in quiz_questions and room != "menu" and object.clicks > 0:
+        object.clicks -= 1
+
 def add_clicks(object, letters):
     if object.clicks in list(letters.keys()) and object.answered == False:
         pass
@@ -18,7 +22,7 @@ def add_clicks(object, letters):
     object.answered = False
     object.played = False
 
-def activate_quiz(object, quiz_object, results, letters, room_checked, room, clicks):
+def manage_clicks(object, quiz_object, results, letters, room_checked, room, clicks):
     if room_checked == room and quiz_object.active == False and clicks != 0:
         add_clicks(object, letters)
 
@@ -63,10 +67,10 @@ def katakana_room(window):
 
 def frases_room(window):
     window.blit(background_frases, (0, 0))
-    rika_frases.general(window, rika_frases, sprite_choice_frases, buttons_frases, moves_frases, frases, dialogue_frases, restart_quiz_frases, '')
+    rika_frases.general(window, rika_frases, sprite_choice_frases, buttons_frases, moves_frases, frases, dialogue_frases, restart_quiz_frases, frases_sounds)
 
 def kanji_room(window):
     window.blit(background_kanji, (0, 0))
-    rika_kanji.general(window, rika_kanji, sprite_choice_kanji, buttons_kanji, moves_kanji, kanji_letters, dialogue_kanji, restart_quiz_kanji, '')
+    rika_kanji.general(window, rika_kanji, sprite_choice_kanji, buttons_kanji, moves_kanji, kanji_letters, dialogue_kanji, restart_quiz_kanji, kanji_sounds)
 
 
