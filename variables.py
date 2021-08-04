@@ -88,8 +88,16 @@ restart_quiz_frases = {}
 restart_quiz_kanji = {}
 
 # movements
-moves_hiragana = {7: (0, HEIGHT - 120), 12: (100, HEIGHT - 120), 13: (0, HEIGHT - 120)}
-moves_katakana = {6: (0, HEIGHT - 120), 12: (100, HEIGHT - 120), 12: (0, HEIGHT - 120)}
+moves_hiragana = {
+    6: (WIDTH/2 - 300, HEIGHT - 120), 7: (0, HEIGHT - 120), 11: (0, HEIGHT - 120), 
+    12: (100, HEIGHT - 120), 13: (0, HEIGHT - 120)
+
+}
+moves_katakana = {
+    5: (WIDTH/2 - 300, HEIGHT - 120), 6: (0, HEIGHT - 120), 10: (0, HEIGHT - 120), 11: (100, HEIGHT - 120), 
+    12: (0, HEIGHT - 120)
+
+}
 moves_frases = {}
 moves_kanji = {}
 

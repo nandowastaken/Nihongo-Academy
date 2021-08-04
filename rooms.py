@@ -9,7 +9,7 @@ rika_frases = Rika()
 rika_kanji = Rika()
 
 def go_back(object, quiz_questions, room):
-    if object.clicks not in quiz_questions and room != "menu" and object.clicks > 0:
+    if object.clicks not in quiz_questions and room != "menu" and object.clicks > 0 and (object.clicks - 2) not in quiz_questions:
         object.clicks -= 1
 
 def add_clicks(object, letters):
