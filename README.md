@@ -53,11 +53,11 @@ Use it as you wish, the only thing you cannot do is copying this and claiming to
 <p align="center">
   
   <a href="https://www.instagram.com/nandowastaken/">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="My instagram" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank" alt="My instagram">
   </a>
   
   <a href="https://twitter.com/nandowastaken">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt "My Twitter" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank" alt "My Twitter">
   </a>
   
 </p>
