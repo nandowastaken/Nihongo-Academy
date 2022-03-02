@@ -9,7 +9,7 @@ from character import Character
 
 # screen settings
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Aprenda Japonês')
+pygame.display.set_caption('Nihongo Academy')
 pygame.display.set_icon(icon)
 
 # Run the game
