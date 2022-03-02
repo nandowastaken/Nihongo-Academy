@@ -50,6 +50,8 @@ The nubmer in the left is the amount of clicks you gave, and the text is somethi
 
 Use it as you wish, the only thing you cannot do is copying this and claiming to be yours, that would be fraud, and fraud isn't very nice, is it? However, if you want to study it, do it, if you want to make this code better, do it, you can even replace all the images and text to make a completely different game, using this code as a skeleton. Do whatever you want, and if you do something really cool, let me know, I'd love to see that. Here's my contact information:
 
+<br>
+
 <p align="center">
   
   <a href="https://www.instagram.com/nandowastaken/">
