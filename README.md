@@ -44,7 +44,7 @@ dialogue_hiragana = {0: "こにちは！Esta é a primeira vez que nos encontram
 }
 ~~~
 
-The nubmer in the left is the amount of clicks you gave, and the text is something that Rika will say at that exactly same moment. So, basically, if you want to continue to add content to this game, you just need to put new things at these dictionaries, as much as you wish. You can continue and make a giant game without writing a single like of code at all! And that is the most important part of the code in this game.
+The number in the left is the amount of clicks you gave, and the text is something that Rika will say at that exactly same moment. So, basically, if you want to continue to add content to this game, you just need to put new things at these dictionaries, as much as you wish. You can continue and make a giant game without writing a single like of code at all! And that is the most important part of the code in this game.
 
 ### How can I use this code?
 
